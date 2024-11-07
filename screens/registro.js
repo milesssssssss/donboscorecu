@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Picker, StyleSheet } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
+
 
 export default function RegisterScreen({ navigation }) {
   const [name, setName] = useState('');
@@ -9,7 +11,7 @@ export default function RegisterScreen({ navigation }) {
   const [status, setStatus] = useState('Pendiente');
 
   const handleSave = () => {
-    navigation.navigate('Details', {
+    navigation.navigate('observaciones', {
       name,
       grade,
       section,

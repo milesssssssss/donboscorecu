@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, Button, Picker, StyleSheet } from 'react-native';
+import { View, Text, Button,  StyleSheet } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 
 export default function DetailsScreen({ route, navigation }) {
   const { name, grade, section, observation, status: initialStatus } = route.params;
